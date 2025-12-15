@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw
+    catalog: workspace
+    schema: default
+    tables:
+      - name: orders_raw
+        description: "Raw orders table generated in Databricks"

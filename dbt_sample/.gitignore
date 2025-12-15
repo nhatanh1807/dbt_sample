@@ -1,0 +1,16 @@
+
+target/
+dbt_packages/
+logs/
+dbt_internal_packages/
+# Python virtual env
+venv/
+__pycache__/
+*.pyc
+
+# dbt local profile
+.dbt/
+
+# IDE / OS
+.vscode/
+.DS_Store
