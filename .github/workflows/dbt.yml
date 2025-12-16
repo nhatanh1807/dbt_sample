@@ -41,7 +41,7 @@ jobs:
                 host: "\${DATABRICKS_HOST}"
                 http_path: "\${DATABRICKS_HTTP_PATH}"
                 token: "\${DATABRICKS_TOKEN}"
-                schema: analytics
+                schema: default
                 threads: 4
           EOF
 
@@ -54,4 +54,5 @@ jobs:
         run: |
           cd dbt_sample
           dbt build
+
 
