@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: bronze_orders
+    description: "Gold model example"
+    columns:
+      - name: order_id
+        tests:
+          - not_null
+          - unique
+      - name: channel
+        tests:
+          - accepted_values:
+              values: ['web', 'mobile_app', 'facebook', 'tiktok', 'email']
